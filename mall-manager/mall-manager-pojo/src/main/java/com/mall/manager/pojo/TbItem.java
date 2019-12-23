@@ -1,11 +1,12 @@
 package com.mall.manager.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * 订单对象
  */
-public class TbItem {
+public class TbItem implements Serializable{
     private Long id;
 
     private String title;

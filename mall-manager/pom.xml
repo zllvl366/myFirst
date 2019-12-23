@@ -14,7 +14,6 @@
         <module>mall-manager-dao</module>
         <module>mall-manager-interface</module>
         <module>mall-manager-service</module>
-        <module>mall-manager-web</module>
     </modules>
     <artifactId>mall-manager</artifactId>
     <!-- 添加依赖 -->

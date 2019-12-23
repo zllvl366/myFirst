@@ -2,7 +2,6 @@ package com.mall.manager.service;
 
 import com.mall.manager.mapper.TbItemMapper;
 import com.mall.manager.pojo.TbItem;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

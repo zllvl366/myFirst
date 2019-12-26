@@ -14,5 +14,7 @@
     <!-- 使用zookeeper注册中心暴露服务地址 -->
     <dubbo:registry protocol="zookeeper" address="47.95.219.27:8171"/>
     <dubbo:reference interface="com.mall.manager.service.ItemService"
-                     id="itemService" timeout="1200000"/>
+                     id="itemService" timeout="30000"/>
+    <dubbo:reference interface="com.mall.manager.service.ItemCatService"
+                     id="itemCatService" timeout="30000"/>
 </beans>

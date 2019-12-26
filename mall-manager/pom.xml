@@ -33,7 +33,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <!--不配置Tomcat7插件，也能运行。不过默认的端口是8080，path就是工程的名称 -->
                 <configuration>
-                    <port>8080</port>
+                    <port>8081</port>
                     <path>/</path>
                 </configuration>
             </plugin>

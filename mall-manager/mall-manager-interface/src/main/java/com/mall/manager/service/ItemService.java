@@ -1,5 +1,6 @@
 package com.mall.manager.service;
 
+import com.mall.common.pojo.DatagridResult;
 import com.mall.manager.pojo.TbItem;
 
 /**
@@ -15,5 +16,13 @@ public interface ItemService {
      * @return
      */
     TbItem queryItemById(Long itemId);
+
+    /**
+     * 查询订单列表
+     * @param currentPage 当前页
+     * @param pageSize  每页多少条
+     * @return
+     */
+    DatagridResult queryItemList(Integer currentPage,Integer pageSize);
 
 }

@@ -1,6 +1,7 @@
 package com.mall.manager.controller;
 
 import com.mall.common.pojo.DatagridResult;
+import com.mall.common.pojo.E3Result;
 import com.mall.manager.pojo.TbItem;
 import com.mall.manager.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +10,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.xml.ws.RequestWrapper;
 
 /**
  * @author zl
@@ -48,5 +47,16 @@ public class ItemController {
     @ResponseBody
     public DatagridResult queryItemList(@RequestParam(defaultValue = "1") Integer pageNum,Integer pageSize){
         return itemService.queryItemList(pageNum,pageSize);
+    }
+
+    /**
+     * 商品保存
+     * @param item
+     * @return
+     */
+    @RequestMapping("/save")
+    @ResponseBody
+    public E3Result save(TbItem item){
+        return itemService.save(item);
     }
 }

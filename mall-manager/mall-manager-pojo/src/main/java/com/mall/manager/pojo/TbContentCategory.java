@@ -1,8 +1,12 @@
 package com.mall.manager.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class TbContentCategory {
+/**
+ * 广告内容分类
+ */
+public class TbContentCategory implements Serializable{
     private Long id;
 
     private Long parentId;

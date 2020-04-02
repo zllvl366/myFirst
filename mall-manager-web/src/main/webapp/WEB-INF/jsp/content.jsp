@@ -34,7 +34,6 @@ $(function(){
 	tree.tree({
 		onClick : function(node){
 			if(tree.tree("isLeaf",node.target)){
-				alert(node.id)
 				datagrid.datagrid('reload', {
 					categoryId :node.id
 		        });
@@ -53,7 +52,7 @@ var contentListToolbar = [{
     		return ;
     	}
     	E3MALL.createWindow({
-			url : "/content-add"
+			url : "/system/content-add"
 		}); 
     }
 },{

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/mall-cms/mall-cms-service" />
     <file type="web" url="file://$PROJECT_DIR$/mall-manager-web" />
     <file type="web" url="file://$PROJECT_DIR$/mall-manager/mall-manager-service" />
     <file type="web" url="file://$PROJECT_DIR$/mall-manager/mall-manager-web" />
+    <file type="web" url="file://$PROJECT_DIR$/mall-portal-web" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -14,6 +16,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/../mall-common/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-cms/pom.xml" />
       </set>
     </option>
   </component>

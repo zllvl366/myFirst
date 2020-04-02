@@ -10,8 +10,16 @@
     <dubbo:application name="mall-manager-web" />
     <!-- 使用zookeeper注册中心暴露服务地址 -->
     <dubbo:registry protocol="zookeeper" address="47.95.219.27:8171"/>
+    <!-- 商品管理服务接口 -->
     <dubbo:reference interface="com.mall.manager.service.ItemService"
                      id="itemService" timeout="30000"/>
+    <!-- 商品分类管理服务接口 -->
     <dubbo:reference interface="com.mall.manager.service.ItemCatService"
                      id="itemCatService" timeout="30000"/>
+    <!-- 首页广告内容分类管理服务接口 -->
+    <dubbo:reference interface="com.mall.cms.service.ContentCategoryService"
+                     id="contentCategoryService" timeout="30000"/>
+    <!-- 首页广告内容管理服务接口 -->
+    <dubbo:reference interface="com.mall.cms.service.ContentService"
+                     id="contentService" timeout="30000"/>
 </beans>

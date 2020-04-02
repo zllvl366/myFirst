@@ -12,6 +12,7 @@ import java.util.List;
 
 /**
  * Created by zll on 2019/12/24.
+ * 商品类别Service
  */
 @Service
 public class ItemCatServiceImpl implements ItemCatService{

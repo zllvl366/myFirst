@@ -27,7 +27,7 @@
 			//href : '${pageContext.request.contextPath}/baseController/portal/about'
 		}, {
 			id : 'p2',
-			title : '东哥语录--见人不服就怼',
+			title : '流量统计',
 			height : 200,
 			collapsible : true
 			//href : '${pageContext.request.contextPath}/baseController/portal/link'

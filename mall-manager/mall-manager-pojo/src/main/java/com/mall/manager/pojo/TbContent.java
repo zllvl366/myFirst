@@ -2,9 +2,10 @@ package com.mall.manager.pojo;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 @Data
-public class TbContent {
+public class TbContent implements Serializable{
     private Long id;
 
     private Long categoryId;

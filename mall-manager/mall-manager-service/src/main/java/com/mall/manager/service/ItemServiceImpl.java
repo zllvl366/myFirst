@@ -52,7 +52,7 @@ public class ItemServiceImpl implements ItemService{
         //封装结果集
         DatagridResult result = new DatagridResult();
         result.setTotal(pageInfo.getTotal());
-        result.setRows(itemList);
+        result.setRows(pageInfo.getList());
         return result;
     }
 

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>宜立方商城后台管理系统</title>
+<title>天尧商城后台管理系统</title>
 <jsp:include page="${pageContext.request.contextPath }/layout/inc.jsp"></jsp:include>
 <script type="text/javascript">
 	var index_tabs;

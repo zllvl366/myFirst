@@ -11,6 +11,10 @@
 
     <artifactId>mall-cms</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>mall-cms-interface</module>
+        <module>mall-cms-service</module>
+    </modules>
 
     <dependencies>
         <dependency>

@@ -14,17 +14,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * @author zl
  * Created by zl on 2019/12/20.
- * 订单处理的Controller
+ * 商品处理的Controller
  */
-@RequestMapping("/item")
 @Controller
+@RequestMapping("/item")
 public class ItemController {
 
     @Autowired
     private ItemService itemService;
 
     /**
-     * 根据订单id查询订单
+     * 根据订单id查询商品
      * @param itemId
      * @return
      */
@@ -38,7 +38,7 @@ public class ItemController {
     }
 
     /**
-     * 查询订单列表
+     * 查询商品列表
      * @param pageNum
      * @param pageSize
      * @return

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mall-cms/mall-cms.iml" filepath="$PROJECT_DIR$/mall-cms/mall-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-cms/mall-cms-interface/mall-cms-interface.iml" filepath="$PROJECT_DIR$/mall-cms/mall-cms-interface/mall-cms-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-cms/mall-cms-service/mall-cms-service.iml" filepath="$PROJECT_DIR$/mall-cms/mall-cms-service/mall-cms-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-common/mall-common.iml" filepath="$PROJECT_DIR$/mall-common/mall-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-manager/mall-manager.iml" filepath="$PROJECT_DIR$/mall-manager/mall-manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-manager/mall-manager-dao/mall-manager-dao.iml" filepath="$PROJECT_DIR$/mall-manager/mall-manager-dao/mall-manager-dao.iml" />
@@ -10,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/mall-manager/mall-manager-service/mall-manager-service.iml" filepath="$PROJECT_DIR$/mall-manager/mall-manager-service/mall-manager-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-manager-web/mall-manager-web.iml" filepath="$PROJECT_DIR$/mall-manager-web/mall-manager-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall-parent.iml" filepath="$PROJECT_DIR$/mall-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall-portal-web/mall-portal-web.iml" filepath="$PROJECT_DIR$/mall-portal-web/mall-portal-web.iml" />
     </modules>
   </component>
 </project>

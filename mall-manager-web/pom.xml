@@ -15,7 +15,12 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>mall-manager-interface</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mall-cms-interface</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <!--JSP相关-->
         <dependency>

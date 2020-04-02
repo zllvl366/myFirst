@@ -22,4 +22,8 @@ public class TreeNodeResult implements Serializable{
      * 节点状态 open为打开 closed 为关闭 默认open
      */
     private String state;
+    /**
+     * 父级Id
+     */
+    private Long parentId;
 }

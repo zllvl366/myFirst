@@ -12,7 +12,7 @@ import com.mall.manager.pojo.TbItemExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.*;
 
 /**
  * @author zl
@@ -67,6 +67,47 @@ public class ItemServiceImpl implements ItemService{
         tbItem.setUpdated(DateUtil.date());
         //保存商品信息
         tbItemMapper.insert(tbItem);
+        return E3Result.ok();
+    }
+
+    @Override
+    public E3Result optItem(String opt, String ids) {
+        //对传入id进行处理
+        String[] split = ids.split(",");
+        List<Long> idsL = null;
+        if(null!=split && split.length>0){
+            idsL = new ArrayList<>();
+            for (String id: split) {
+                idsL.add(Long.parseLong(id));
+            }
+        }
+        if(null==idsL || idsL.size() < 1){
+            return E3Result.build(404,"请选择正确的商品Id");
+        }
+        //普通条件封装
+        Map param = null;
+        if("delete".equals(opt)){//删除商品
+            param = new HashMap();
+            param.put("ids",idsL);
+            param.put("status","3");
+            tbItemMapper.updateItemList(param);
+        }else if("instock".equals(opt)){//商品下架
+            param = new HashMap();
+            param.put("ids",idsL);
+            param.put("status","2");
+            tbItemMapper.updateItemList(param);
+        }else if("reshelf".equals(opt)){//商品上架
+            param = new HashMap();
+            param.put("ids",idsL);
+            param.put("status","1");
+            tbItemMapper.updateItemList(param);
+        }
+        return E3Result.ok();
+    }
+
+    @Override
+    public E3Result optItemInfoOpt(String infoType, String type2, String opt, String id) {
+        //@TODO 缺少数据，暂时不做
         return E3Result.ok();
     }
 }

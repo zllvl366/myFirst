@@ -12,4 +12,7 @@
     <dubbo:registry protocol="zookeeper" address="47.95.219.27:8171"/>
   <!--  <dubbo:reference interface="com.mall.manager.service.ItemService"
                      id="itemService" timeout="30000"/>-->
+    <!-- 首页广告内容管理服务接口 -->
+    <dubbo:reference interface="com.mall.cms.service.ContentService"
+                     id="contentService" timeout="30000"/>
 </beans>

@@ -13,6 +13,7 @@
         <module>mall-manager-web</module>
         <module>mall-portal-web</module>
         <module>mall-cms</module>
+        <module>mall-search</module>
     </modules>
     <packaging>pom</packaging>
 

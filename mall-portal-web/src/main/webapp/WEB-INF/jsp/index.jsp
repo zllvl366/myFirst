@@ -43,7 +43,7 @@
 						if (!cfg.DATA_MSlide) {
 							cfg.DATA_MSlide = [];
 						}
-						var data = [
+					/*	var data = [
 								{
 									"srcB" : "http://image.taotao.com/images/2015/03/03/2015030304360302109345.jpg",
 									"height" : 240,
@@ -103,8 +103,8 @@
 									"widthB" : 550,
 									"href" : "http://sale.jd.com/act/eDpBF1s8KcTOYM.html?cpdad=1DLSUE",
 									"heightB" : 240
-								} ];
-						// 						var data = ${ad1};
+								} ];*/
+							var data = ${ad1};
 
 						cfg.DATA_MSlide = data;
 						// 初始化一个广告信息

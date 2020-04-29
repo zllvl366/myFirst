@@ -17,6 +17,7 @@
       <set>
         <option value="$PROJECT_DIR$/../mall-common/pom.xml" />
         <option value="$PROJECT_DIR$/mall-cms/pom.xml" />
+        <option value="$PROJECT_DIR$/mall-search/pom.xml" />
       </set>
     </option>
   </component>

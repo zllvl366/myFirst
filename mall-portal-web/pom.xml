@@ -13,6 +13,11 @@
     <packaging>war</packaging>
 
     <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>mall-cms-interface</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!--JSP相关-->
         <dependency>
             <groupId>jstl</groupId>

@@ -5,6 +5,7 @@ import com.mall.manager.pojo.TbItemExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
+import java.util.Map;
 
 public interface TbItemMapper {
     int countByExample(TbItemExample example);
@@ -34,4 +35,10 @@ public interface TbItemMapper {
     int updateByPrimaryKeyWithBLOBs(TbItem record);
 
     int updateByPrimaryKey(TbItem record);
+
+    /**
+     * 根据条件更新多条商品记录
+     * @param param
+     */
+    void updateItemList(Map param);
 }

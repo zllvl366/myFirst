@@ -373,4 +373,20 @@
       updated = #{updated,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <!--根据条件更新多条商品-->
+  <update id="updateItemList" parameterType="java.util.Map" >
+      update tb_item
+      <set>
+        <if test="null != status and ''!= status">
+          status = #{status,jdbcType=TINYINT},
+        </if>
+        updated = now()
+      </set>
+      where id IN
+    <foreach collection="ids" item="id" index="index" open="(" close=")" separator=",">
+      #{id,jdbcType=BIGINT}
+    </foreach>
+  </update>
+
 </mapper>

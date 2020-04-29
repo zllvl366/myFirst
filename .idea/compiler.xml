@@ -16,6 +16,7 @@
         <module name="mall-manager-service" />
         <module name="mall-manager-web" />
         <module name="mall-portal-web" />
+        <module name="mall-search-interface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,6 +32,8 @@
       <module name="mall-manager-web" target="1.7" />
       <module name="mall-parent" target="1.7" />
       <module name="mall-portal-web" target="1.7" />
+      <module name="mall-search" target="1.7" />
+      <module name="mall-search-interface" target="1.7" />
       <module name="mallparent" target="1.7" />
     </bytecodeTargetLevel>
   </component>
